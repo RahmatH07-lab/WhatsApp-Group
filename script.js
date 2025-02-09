@@ -23,3 +23,17 @@ function loadChat() {
 }
 
 setInterval(loadChat, 2000); // Auto-refresh chat setiap 2 detik
+
+document.getElementById("call-btn").addEventListener("click", function() {
+    alert("Panggilan sedang berlangsung... 🔊");
+});
+
+document.getElementById("video-call-btn").addEventListener("click", function() {
+    let videoModal = document.createElement("div");
+    videoModal.innerHTML = `
+        <div class="video-popup">
+            <video src="video_call.mp4" autoplay controls></video>
+            <button onclick="this.parentElement.remove()">Tutup</button>
+        </div>`;
+    document.body.appendChild(videoModal);
+});
