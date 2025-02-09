@@ -1,10 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ece5dd;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
+    background: url('whatsapp-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .chat-container {
