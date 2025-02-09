@@ -37,3 +37,12 @@ document.getElementById("video-call-btn").addEventListener("click", function() {
         </div>`;
     document.body.appendChild(videoModal);
 });
+
+function playVoiceNote() {
+    let audio = document.getElementById("welcome-audio");
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
