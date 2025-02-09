@@ -68,3 +68,20 @@ button {
     width: 100%;
     border-radius: 5px;
 }
+
+.chat-message {
+    background: #dcf8c6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-message button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #128c7e;
+}
